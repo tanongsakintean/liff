@@ -71,18 +71,18 @@
 
       async function sendMsg() {
         alert("Message sent");
-        // if (
-        //   liff.getContext().type !== "none" &&
-        //   liff.getContext().type !== "external"
-        // ) {
-        //   await liff.sendMessages([
-        //     {
-        //       type: "sticker",
-        //       stickerId: 1,
-        //       packageId: 1,
-        //     },
-        //   ]);
-        // }
+        if (
+          liff.getContext().type !== "none" &&
+          liff.getContext().type !== "external"
+        ) {
+          await liff.sendMessages([
+            {
+              type: "sticker",
+              packageId: "2",
+              stickerId: "144",
+            },
+          ]);
+        }
       }
 
       function getContext() {
